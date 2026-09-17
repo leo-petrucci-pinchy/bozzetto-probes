@@ -4,8 +4,9 @@
     "jsx": "preserve",
     "moduleResolution": "bundler",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "bozzetto/helpers": ["./.bozzetto/helpers.d.ts"]
     }
   },
-  "include": ["designs/**/*", "app/**/*"]
+  "include": [".bozzetto/**/*", "app/**/*"]
 }
