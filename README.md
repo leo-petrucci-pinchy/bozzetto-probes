@@ -1,9 +1,14 @@
-# bozzetto-probe-next
+# Bozzetto probes
 
-Bozzetto M1.1 probe repo #2: a minimal probe of the Next 15 + React 19 stack.
+One self-contained probe per frontend stack. The Bozzetto renderer never
+installs or runs these — it reads files into its sandbox. Pick a subfolder
+in the loader (root-pick with a chooser comes later).
 
-Stack: Next 15.1.6, React 19.2.8, TypeScript — CSS Modules plus plain global CSS, no Tailwind.
+- `next-modules/` — Next 15 + React 19 + CSS Modules + plain global CSS, no
+  Tailwind. Declares `staticCss`. Standalone: `npm install && npm run dev`.
+- `vite-tailwind/` — Vite 6 + React 19 + Tailwind v4. Declares `tailwind()`.
+  Standalone: `npm install && npm run dev`.
 
-Entry: `designs/bozzetto-hello/page.tsx` exports `mount(container)` for client-side rendering.
-
-No Tailwind by design: styling relies on CSS Modules and the global `--probe-accent` custom property.
+Each probe renders the same HelloCard (same props, same `data-design-id`s)
+from its `.bozzetto/design/bozzetto-hello/` entry, so sandbox output can be
+compared stack-vs-stack. Each folder stands alone — never install at root.
