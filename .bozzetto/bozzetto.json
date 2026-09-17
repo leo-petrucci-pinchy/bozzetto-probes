@@ -1,7 +1,0 @@
-{
-  "entry": "/designs/bozzetto-hello/page.tsx",
-  "theme": {
-    "dark": "follow-host",
-    "fonts": "isolate"
-  }
-}

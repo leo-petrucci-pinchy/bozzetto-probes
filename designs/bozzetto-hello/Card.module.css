@@ -1,11 +1,9 @@
 .title {
-  font-family: ui-sans-serif, system-ui, sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: var(--probe-accent);
 }
 .body {
-  font-family: ui-sans-serif, system-ui, sans-serif;
   font-size: 14px;
   line-height: 1.5;
 }
