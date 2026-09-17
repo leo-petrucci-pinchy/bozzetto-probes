@@ -1,0 +1,11 @@
+:root {
+  --probe-accent: #6d28d9;
+}
+.dark {
+  --probe-accent: #a78bfa;
+}
+.probe-note {
+  font-size: 14px;
+  margin-top: 8px;
+  color: var(--probe-accent);
+}
