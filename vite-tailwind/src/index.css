@@ -11,3 +11,5 @@
   margin-top: 8px;
   color: var(--probe-accent);
 }
+/* probe test hook for declared-font path */
+[data-design-id="hello-card.title"] { font-family: 'Space Grotesk', sans-serif; }
